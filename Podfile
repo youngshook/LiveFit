@@ -1,10 +1,14 @@
-platform:ios, '7.0'
-pod "RMPickerViewController", "~> 1.2.0"
+platform :ios, '7.0'
+pod 'RMPickerViewController', '~> 1.2.0'
 pod 'BlocksKit', '2.2.0'
 pod 'UMeng', '2.2.1'
 pod 'SDWebImage-ProgressView', '0.4.0'
 pod 'EAIntroView', '2.6.0'
 pod 'AFNetworking', '2.3.1'
 pod 'Parse', '~> 1.2.20'
-inhibit_all_warnings!
-
+pod 'FLEX', '1.1.1'
+pod 'TAPKeyboardPop', '0.1.2'
+pod 'YSCategorys', '1.0.7'
+pod 'AutoLayoutTextViews', '1.1.0'
+pod 'AMBTableViewController', '1.1.0'
+pod 'RESideMenu', '4.0.7'

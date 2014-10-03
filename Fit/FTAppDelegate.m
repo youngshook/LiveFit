@@ -8,7 +8,7 @@
 
 #import "FTAppDelegate.h"
 #import "JDMenuViewController.h"
-#import "JDSideMenu.h"
+#import "RESideMenu.h"
 
 @implementation FTAppDelegate
 
@@ -18,20 +18,25 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:APP_COLOR];
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica-Light" size:20.0],NSFontAttributeName,nil]];
-
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-   
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    
-    UIViewController *menuController = [[JDMenuViewController alloc] init];
+	
     UINavigationController *navController = [STORY_BOARD instantiateViewControllerWithIdentifier:@"mainNav"];
-    JDSideMenu *sideMenu = [[JDSideMenu alloc] initWithContentController:navController menuController:menuController];
-    [sideMenu setBackgroundImage:[UIImage imageNamed:@"bg_menu"]];
-    self.window.rootViewController = sideMenu;
-    
+	RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navController
+																	leftMenuViewController:[JDMenuViewController new]
+																   rightMenuViewController:nil];
+	
+	sideMenuViewController.backgroundImage = [UIImage imageNamed:@"bg_menu"];
+	sideMenuViewController.menuPreferredStatusBarStyle = 1;
+	sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+	sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
+	sideMenuViewController.contentViewShadowOpacity = 0.6;
+	sideMenuViewController.contentViewShadowRadius = 12;
+	sideMenuViewController.contentViewShadowEnabled = YES;
+	self.window.rootViewController = sideMenuViewController;
+	
     [Parse setApplicationId:@"pUeCyCXFM7p0LydirrLlkzwMaNggkfkQ0jRRPxFG"
                   clientKey:@"pr6KFSuqxvGwh1L1aYwRNzGDwCC0gFNgWOVSvJXO"];
     

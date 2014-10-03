@@ -6,9 +6,8 @@
 //  Copyright (c) 2013 Markus Emrich. All rights reserved.
 //
 
-#import "UIViewController+JDSideMenu.h"
-
 #import "JDMenuViewController.h"
+#import "RESideMenu.h"
 
 @interface JDMenuViewController ()
 
@@ -21,7 +20,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     
 }
 
@@ -36,25 +34,24 @@
 {
     [super viewDidLayoutSubviews];
     self.scrollView.contentSize = CGRectInset(self.scrollView.bounds, 0, -1).size;
-    self.sideMenuController.panGestureEnabled = YES;
 }
 
 - (IBAction)HomeBtnAction:(id)sender
 {
-    UINavigationController *navController = [STORY_BOARD instantiateViewControllerWithIdentifier:@"mainNav"];
-    [self.sideMenuController setContentController:navController animated:YES];
+	[self.sideMenuViewController setContentViewController:[STORY_BOARD instantiateViewControllerWithIdentifier:@"mainNav"] animated:YES];
+	[self.sideMenuViewController hideMenuViewController];
 }
 
 - (IBAction)favouriteBtnAction:(id)sender
 {
-    UINavigationController *navController = [STORY_BOARD instantiateViewControllerWithIdentifier:@"articleNav"];
-    [self.sideMenuController setContentController:navController animated:YES];
+	[self.sideMenuViewController setContentViewController:[STORY_BOARD instantiateViewControllerWithIdentifier:@"articleNav"] animated:YES];
+	[self.sideMenuViewController hideMenuViewController];
 }
 
 - (IBAction)moreBtnAction:(id)sender
 {
-    UINavigationController *navController = [STORY_BOARD instantiateViewControllerWithIdentifier:@"calNav"];
-    [self.sideMenuController setContentController:navController animated:YES];
+	[self.sideMenuViewController setContentViewController:[STORY_BOARD instantiateViewControllerWithIdentifier:@"calNav"] animated:YES];
+	[self.sideMenuViewController hideMenuViewController];
 }
 
 

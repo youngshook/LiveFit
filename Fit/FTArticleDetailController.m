@@ -11,7 +11,7 @@
 @interface FTArticleDetailController ()
 @property (strong, nonatomic) IBOutlet UIImageView *headerImageView;
 
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -29,29 +29,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_titleLabel setText:_article.title];
-    
-    UILabel *contentLabel = [[UILabel alloc] init];
-
-    [contentLabel setNumberOfLines:0];
-    contentLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    
-    UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
-    contentLabel.font = font;
-    
-    NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:13]};
-    
-    CGSize labelSize = [_article.content boundingRectWithSize:CGSizeMake(300, self.view.frame.size.height + 364) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
-
-    contentLabel.frame = CGRectMake(10,240, labelSize.width, labelSize.height);
-    contentLabel.text = _article.content;
-    //    [self.view addSubview:contentLabel];
-    
+	
+	self.textView.text = _article.content;
+	
     [_headerImageView sd_setImageWithURL:[NSURL URLWithString:_article.coverPhotoUrl]];
-    
-    UITextView *textView = [[UITextView alloc]initWithFrame:CGRectMake(0, _headerImageView.bounds.size.height, 320, self.view.bounds.size.height - _headerImageView.bounds.size.height )];
-    textView.text = _article.content;
-    [self.view addSubview:textView];
+	
+}
+
+- (void)viewWillLayoutSubviews{
+	self.textView.font = [UIFont systemFontOfSize:15];
+	CGFloat fixedWidth = self.textView.frame.size.width;
+	CGSize newSize = [self.textView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
+	CGRect newFrame = self.textView.frame;
+	newFrame.size = CGSizeMake(fmaxf(newSize.width, fixedWidth), newSize.height);
+	self.textView.frame = newFrame;
+	self.tableView.contentSize = CGSizeMake(self.view.frame.size.width, _headerImageView.frame.size.height + self.textView.frame.size.height + 20);
 }
 
 - (void)didReceiveMemoryWarning

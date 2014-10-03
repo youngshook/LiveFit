@@ -201,6 +201,16 @@
     
 }
 
+- (void)viewWillLayoutSubviews{
+	_contentTextView.font = [UIFont systemFontOfSize:15];
+	CGFloat fixedWidth = _contentTextView.frame.size.width;
+	CGSize newSize = [_contentTextView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
+	CGRect newFrame = _contentTextView.frame;
+	newFrame.size = CGSizeMake(fmaxf(newSize.width, fixedWidth), newSize.height);
+	_contentTextView.frame = newFrame;
+	self.tableView.contentSize = CGSizeMake(self.view.frame.size.width, _headerScrollView.frame.size.height + _contentTextView.frame.size.height + 20);
+}
+
 //pagecontrol的点跟着页数改变
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {

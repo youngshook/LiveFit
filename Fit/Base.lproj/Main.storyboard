@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PZa-GR-Ih9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PZa-GR-Ih9">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -75,40 +76,70 @@
         <scene sceneID="fro-fR-THY">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="RfZ-wg-Y5q" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="42E-7h-KzJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="42E-7h-KzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95437482920000005" green="0.9529524331" blue="0.97779815049999996" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="EBM-NC-Kxu">
-                            <rect key="frame" x="0.0" y="64" width="320" height="550"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Get mind-blowing and body-altering results in only 12 weeks with Kris Gethin's Hardcore Daily Video Trainer. " translatesAutoresizingMaskIntoConstraints="NO" id="UrC-t3-eDD">
-                                    <rect key="frame" x="9" y="204" width="310" height="74"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="textColor" red="0.21568629149999999" green="0.71764707569999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Fe-s4-BEy">
-                                    <rect key="frame" x="4" y="278" width="310" height="65"/>
-                                </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y0-Wl-Vi8">
-                                    <rect key="frame" x="10" y="344" width="300" height="200"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <string key="text">Many of the basic movements presented here may be new to you. As a result, your coordination may be challenged at times. If so, don't worry. Keep practicing and rehearsing the movement pattern and soon it will feel like second nature—and that's when your gains in size and strength will take off. Until then, it's important to understand and practice the basic movements before using more challenging weights.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beachbody.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-Ge-39X">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="LUa-bR-LAy">
-                                <cells/>
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="pPd-el-DeB">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pPd-el-DeB" id="LNA-y9-rJy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beachbody.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-Ge-39X">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="bIE-oc-imi">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bIE-oc-imi" id="cFb-Mq-jqk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Get mind-blowing and body-altering results in only 12 weeks with Kris Gethin's Hardcore Daily Video Trainer. " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq7-xT-PaS">
+                                                    <rect key="frame" x="15" y="5" width="291" height="79"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.21568629149999999" green="0.71764707569999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="QIf-N1-Yma">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QIf-N1-Yma" id="pEQ-Cq-QWf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Fe-s4-BEy">
+                                                    <rect key="frame" x="5" y="0.0" width="310" height="65"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="JIJ-lG-dKK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIJ-lG-dKK" id="YEp-yU-Iij">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y0-Wl-Vi8">
+                                                    <rect key="frame" x="10" y="0.0" width="300" height="175"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <string key="text">Many of the basic movements presented here may be new to you. As a result, your coordination may be challenged at times. If so, don't worry. Keep practicing and rehearsing the movement pattern and soon it will feel like second nature—and that's when your gains in size and strength will take off. Until then, it's important to understand and practice the basic movements before using more challenging weights.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -116,6 +147,7 @@
                             <outlet property="delegate" destination="RfZ-wg-Y5q" id="Da5-b0-Tbm"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Beach Body" id="7do-S7-4bb">
                         <barButtonItem key="backBarButtonItem" title=" " id="ht4-QH-mmK"/>
                         <barButtonItem key="rightBarButtonItem" title="开始" id="FRj-RX-WYU">
@@ -127,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSI-be-m4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850" y="-510"/>
+            <point key="canvasLocation" x="1850" y="-512"/>
         </scene>
         <!--训练-->
         <scene sceneID="zHR-Kr-M26">
@@ -747,38 +779,59 @@
         <scene sceneID="QPe-Ju-lae">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="7ID-Hz-UMu" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0dy-X6-b42">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0dy-X6-b42">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95437482920000005" green="0.9529524331" blue="0.97779815049999996" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="1Qv-Q5-gqb">
-                            <rect key="frame" x="0.0" y="64" width="320" height="550"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shredded.png" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-Cx-NqD">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="    想拥有迷人的肌肉线条和性感的腹肌吗？肌肉撕裂计划将帮助你实现这一目标。" translatesAutoresizingMaskIntoConstraints="NO" id="rcY-RN-fS9">
-                                    <rect key="frame" x="10" y="214" width="303" height="77"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="textColor" red="0.21568629149999999" green="0.71764707569999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ7-3Q-L37">
-                                    <rect key="frame" x="8" y="300" width="303" height="1180"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <string key="text">    “肌肉撕裂”是一个可以帮助你减脂并雕刻肌肉线条的完美计划，它可以让你拥有迷人的肌肉线条和性感的腹肌，让你的魅力指数迅速飙升。如果你的体脂含量介于20-30%之间，并严格按照我们的指导进行训练和饮食，那么一个训练周期就会有明显的效果；如果你的体脂含量较高，那么你可能需要两到三个这样的训练周期。基于你执行肌肉撕裂计划的严格程度，你可以在一个月内减重2-6公斤。我们专业地设计了这套计划帮助你将身体调节到最佳的燃脂模式。我自己在使用该计划一个月之内减掉了7公斤的脂肪，身边的很多朋友也达到了类似的效果。该计划的关键在于饮食和训练。合理的饮食与刻苦的训练同样重要，如果你只是投入了巨大的精力进行训练而忽略了合理的饮食，那么你的刻苦训练将大打折扣。没错，我说的是健康的生活习惯。首先你需要改善生活习惯，并开始注重身体训练和科学的饮食。选择健康的生活方式，不仅仅是为了一周去几次健身房那么简单。</string>
-                                    <color key="textColor" red="0.17036769700000001" green="0.17036769700000001" blue="0.17036769700000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="5A0-Oz-TM4">
-                                <cells/>
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="199" id="nth-y8-U9Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nth-y8-U9Q" id="155-Xi-Bzd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shredded.png" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-Cx-NqD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="wQd-rI-OXv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQd-rI-OXv" id="0xE-lb-E55">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="    想拥有迷人的肌肉线条和性感的腹肌吗？肌肉撕裂计划将帮助你实现这一目标。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcY-RN-fS9">
+                                                    <rect key="frame" x="8" y="5" width="303" height="77"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.21568629149999999" green="0.71764707569999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="410" id="VyS-Pf-FpI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VyS-Pf-FpI" id="1Fx-cb-eFa">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ7-3Q-L37">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <string key="text">    “肌肉撕裂”是一个可以帮助你减脂并雕刻肌肉线条的完美计划，它可以让你拥有迷人的肌肉线条和性感的腹肌，让你的魅力指数迅速飙升。如果你的体脂含量介于20-30%之间，并严格按照我们的指导进行训练和饮食，那么一个训练周期就会有明显的效果；如果你的体脂含量较高，那么你可能需要两到三个这样的训练周期。基于你执行肌肉撕裂计划的严格程度，你可以在一个月内减重2-6公斤。我们专业地设计了这套计划帮助你将身体调节到最佳的燃脂模式。我自己在使用该计划一个月之内减掉了7公斤的脂肪，身边的很多朋友也达到了类似的效果。该计划的关键在于饮食和训练。合理的饮食与刻苦的训练同样重要，如果你只是投入了巨大的精力进行训练而忽略了合理的饮食，那么你的刻苦训练将大打折扣。没错，我说的是健康的生活习惯。首先你需要改善生活习惯，并开始注重身体训练和科学的饮食。选择健康的生活方式，不仅仅是为了一周去几次健身房那么简单。</string>
+                                                    <color key="textColor" red="0.17036769700000001" green="0.17036769700000001" blue="0.17036769700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -786,6 +839,7 @@
                             <outlet property="delegate" destination="7ID-Hz-UMu" id="Bek-qy-w1a"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Get Shredded" id="HGv-h9-4b3">
                         <barButtonItem key="backBarButtonItem" title=" " id="Chv-H3-QI4"/>
                         <barButtonItem key="rightBarButtonItem" title="开始" id="pLm-ed-SP1">
@@ -842,15 +896,15 @@
                             <rect key="frame" x="0.0" y="64" width="320" height="506"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cam-ic-mNV">
-                                    <rect key="frame" x="10" y="214" width="280" height="21"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70z-sc-4LK">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                 </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-nj-lUO">
+                                    <rect key="frame" x="8" y="208" width="312" height="298"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </view>
@@ -862,7 +916,7 @@
                     <navigationItem key="navigationItem" id="Qyp-hP-O9d"/>
                     <connections>
                         <outlet property="headerImageView" destination="70z-sc-4LK" id="V38-QG-pti"/>
-                        <outlet property="titleLabel" destination="cam-ic-mNV" id="EPA-uC-28X"/>
+                        <outlet property="textView" destination="Eeh-nj-lUO" id="vFC-Ev-s0B"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQh-CQ-EUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -874,7 +928,7 @@
             <objects>
                 <tableViewController id="7I4-i5-EAu" customClass="FTHomeController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="204" sectionHeaderHeight="22" sectionFooterHeight="22" id="llT-B3-YnT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.954374829221872" green="0.95295243309185873" blue="0.97779815051020402" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
@@ -952,22 +1006,52 @@
         <!--Bulking-->
         <scene sceneID="a5A-jM-Jxn">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="rUy-m1-fSO" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bmP-mD-hum">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <tableViewController id="rUy-m1-fSO" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bmP-mD-hum">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95437482920000005" green="0.9529524331" blue="0.97779815049999996" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="7nw-hv-eu8">
-                            <rect key="frame" x="0.0" y="64" width="320" height="1500"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-E9-8SB">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKg-lW-KXm">
-                                    <rect key="frame" x="10" y="286" width="303" height="1180"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <string key="text">    本计划适用于所有那些想增加肌肉和强度的人。不管你是一位初学者还是已经掌握了某些训练方法的人，本计划都能使你变得“更大、更强、更快”。本计划以科学为根据、通过健身活动的测试、得到LiveFit的认可。通过一些最有效的训练科学技术，如渐进超量负荷、定计划等，使你获得最大收益。
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="uI5-bm-fpb">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="M6g-eN-ic9">
+                                        <rect key="frame" x="71" y="202" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M6g-eN-ic9" id="6fW-mG-Jj4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-E9-8SB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="eIv-UJ-7qX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eIv-UJ-7qX" id="2XM-bP-uO3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="    本计划以科学为根据、通过健身活动的测试、得到LiveFit的认可，旨在帮助那些想增加肌肉和强度的人进行练习。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N15-iQ-18v">
+                                                    <rect key="frame" x="0.0" y="5" width="320" height="76"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1160" id="avN-Nl-89r">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="avN-Nl-89r" id="oGQ-co-vvZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sd7-Jr-uH1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1160"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">    本计划适用于所有那些想增加肌肉和强度的人。不管你是一位初学者还是已经掌握了某些训练方法的人，本计划都能使你变得“更大、更强、更快”。本计划以科学为根据、通过健身活动的测试、得到LiveFit的认可。通过一些最有效的训练科学技术，如渐进超量负荷、定计划等，使你获得最大收益。
 
     训炼的休息间隔时间为1到4分钟，视你的经验而定。如果你已经有了一定肌肉耐力，间隔时间可以缩短。随着训练计划的实行以及体力和耐力的增强，你的休息间隔时间可以越来越短。
 
@@ -984,25 +1068,15 @@
     减重组：在第3和第4个星期，在主要练习的最后，你应做一组减重练习。这一组的作法是，先使力竭，然后把重量减少25-30%,不休息继续练习直到再次达到肌肉失效。
 小腿的练习需有较高的重复次数，这可以给肌肉带来更多增益。
 
-    在做腹肌和腓肌练习时你会注意到，在进行每一次小循环（microcycle）时，重复次数较高，这是因为这些肌肉群在较高的重复次数下会取得更好的效果（指在肌肉的强度和大小方面）。
-</string>
-                                    <color key="textColor" red="0.17036769700000001" green="0.17036769700000001" blue="0.17036769700000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="    本计划以科学为根据、通过健身活动的测试、得到LiveFit的认可，旨在帮助那些想增加肌肉和强度的人进行练习。" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-g2-SI8">
-                                    <rect key="frame" x="10" y="210" width="303" height="74"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="textColor" red="0.21568629149999999" green="0.71764707569999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        </view>
-                        <sections>
-                            <tableViewSection id="OHM-aN-mjc">
-                                <cells/>
+    在做腹肌和腓肌练习时你会注意到，在进行每一次小循环（microcycle）时，重复次数较高，这是因为这些肌肉群在较高的重复次数下会取得更好的效果（指在肌肉的强度和大小方面）。</string>
+                                                    <color key="textColor" red="0.17036769700000001" green="0.17036769700000001" blue="0.17036769700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -1010,6 +1084,7 @@
                             <outlet property="delegate" destination="rUy-m1-fSO" id="Ltj-sv-egl"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Bulking" id="Gt5-jj-lLB">
                         <barButtonItem key="backBarButtonItem" title=" " id="eJl-H8-n6d"/>
                         <barButtonItem key="rightBarButtonItem" title="开始" id="dI7-RC-MaS">
@@ -1021,7 +1096,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRD-zq-I7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847" y="-1172"/>
+            <point key="canvasLocation" x="1833" y="-1190"/>
         </scene>
         <!--训练-->
         <scene sceneID="ew8-Ly-QOh">
@@ -1844,7 +1919,7 @@
         <scene sceneID="g13-mM-aRC">
             <objects>
                 <tableViewController id="aSG-l8-0q1" customClass="FTWorkoutDetailController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ri6-uW-JLN">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ri6-uW-JLN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.95437482920000005" green="0.9529524331" blue="0.97779815049999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -1852,12 +1927,9 @@
                             <rect key="frame" x="0.0" y="64" width="320" height="800"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWb-Dq-i36">
-                                    <rect key="frame" x="12" y="260" width="300" height="500"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWb-Dq-i36">
+                                    <rect key="frame" x="12" y="260" width="300" height="245"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <string key="text" base64-UTF8="YES">
-IAo
-</string>
                                     <color key="textColor" red="0.17036769701086951" green="0.17036769701086951" blue="0.17036769701086951" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1906,8 +1978,8 @@ IAo
                             <rect key="frame" x="0.0" y="64" width="320" height="800"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEU-RG-lVI">
-                                    <rect key="frame" x="12" y="260" width="300" height="500"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEU-RG-lVI">
+                                    <rect key="frame" x="12" y="260" width="300" height="354"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <string key="text" base64-UTF8="YES">
 IAo
@@ -1960,8 +2032,8 @@ IAo
                             <rect key="frame" x="0.0" y="64" width="320" height="800"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF5-Sd-0T6">
-                                    <rect key="frame" x="12" y="260" width="300" height="500"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF5-Sd-0T6">
+                                    <rect key="frame" x="12" y="260" width="300" height="244"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <string key="text" base64-UTF8="YES">
 IAo

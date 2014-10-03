@@ -7,8 +7,6 @@
 //
 
 #import "FTHomeController.h"
-#import "JDSideMenu.h"
-#import <objc/runtime.h>
 
 
 @interface FTHomeController ()
@@ -17,23 +15,9 @@
 
 @implementation FTHomeController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,13 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)menuBtnAction:(id)sender {
-    JDSideMenu *sideMenu = (JDSideMenu *)self.navigationController.parentViewController;
-    
-    if (sideMenu.isMenuVisible) {
-        [sideMenu hideMenuAnimated:YES];
-    }else{
-        [sideMenu showMenuAnimated:YES];
-    }
+	[self.view endEditing:YES];
+	[self performSelector:@selector(presentLeftMenuViewController:) withObject:sender];
 }
 
 /*

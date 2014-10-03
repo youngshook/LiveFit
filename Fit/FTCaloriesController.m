@@ -10,9 +10,9 @@
 #import "FTCalculationResult.h"
 #import "FTCaloriesExplanationController.h"
 #import "RMPickerViewController.h"
-#import "JDSideMenu.h"
 
-@interface FTCaloriesController ()<UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate,RMPickerViewControllerDelegate>
+
+@interface FTCaloriesController ()<UIPickerViewDelegate,UIPickerViewDataSource,UIPickerViewDataSource,UITextFieldDelegate,RMPickerViewControllerDelegate>
 {
     int gender;
     float active;
@@ -36,9 +36,7 @@
 	
 	[RMPickerViewController setLocalizedTitleForCancelButton:@"取消"];
 	[RMPickerViewController setLocalizedTitleForSelectButton:@"选择"];
-	self.pickerVC = [RMPickerViewController pickerController];
-	self.pickerVC.delegate = self;
-
+	
     self.genderPickerData = [NSArray arrayWithObjects:@"男", @"女", nil];
     
     self.activenessPickerData = [NSArray arrayWithObjects:@"基本不运动", @"每周运动1-2次", @"每周运动3-4次", @"每周运动4-5次", @"每周运动6-7次", nil];
@@ -72,6 +70,8 @@
             
             pickerTag = 1;
 			[self.view endEditing:YES];
+			self.pickerVC = [RMPickerViewController pickerController];
+			self.pickerVC.delegate = self;
 			[self.pickerVC show];
             
             break;
@@ -80,6 +80,8 @@
             
             pickerTag = 4;
 			[self.view endEditing:YES];
+			self.pickerVC = [RMPickerViewController pickerController];
+			self.pickerVC.delegate = self;
 			[self.pickerVC show];
             
             break;
@@ -88,6 +90,8 @@
             
             pickerTag = 5;
 			[self.view endEditing:YES];
+			self.pickerVC = [RMPickerViewController pickerController];
+			self.pickerVC.delegate = self;
 			[self.pickerVC show];
             
             break;
@@ -162,13 +166,7 @@
 
 - (IBAction)menuBtnAction:(id)sender {
 	[self.view endEditing:YES];
-    JDSideMenu *sideMenu = (JDSideMenu *)self.navigationController.parentViewController;
-    
-    if (sideMenu.isMenuVisible) {
-        [sideMenu hideMenuAnimated:YES];
-    }else{
-        [sideMenu showMenuAnimated:YES];
-    }
+	[self performSelector:@selector(presentLeftMenuViewController:) withObject:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

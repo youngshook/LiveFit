@@ -21,8 +21,6 @@
 		6595C15C19C87D9800F9F769 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6595C15B19C87D9800F9F769 /* Images.xcassets */; };
 		65B2982B19CC1E2100A53DA2 /* JDMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B2982819CC1E2100A53DA2 /* JDMenuViewController.m */; };
 		65B2982C19CC1E2100A53DA2 /* JDMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B2982919CC1E2100A53DA2 /* JDMenuViewController.xib */; };
-		65B2983119CC1F2900A53DA2 /* JDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B2982E19CC1F2900A53DA2 /* JDSideMenu.m */; };
-		65B2983219CC1F2900A53DA2 /* UIViewController+JDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B2983019CC1F2900A53DA2 /* UIViewController+JDSideMenu.m */; };
 		65B4BCD819CBE894006AE37F /* cal_intro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B4BCD719CBE894006AE37F /* cal_intro@2x.png */; };
 		65DBDD6219D2B06400D6BDE3 /* calf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65DBDD6119D2B06400D6BDE3 /* calf.jpg */; };
 		65F924AD19C09EF40095B03A /* cal_pic3.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65F924AC19C09EF40095B03A /* cal_pic3.1.jpg */; };
@@ -48,7 +46,6 @@
 		A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FB1989EF8600845BB0 /* MBProgressHUD+Category.m */; };
 		A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B0FD1989EF8600845BB0 /* MBProgressHUD.m */; };
 		A154B1041989EFEF00845BB0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B1031989EFEF00845BB0 /* Reachability.m */; };
-		A154B1081989F06500845BB0 /* ProjectSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B1071989F06500845BB0 /* ProjectSettings.m */; };
 		A154B10B1989F08500845BB0 /* YSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B10A1989F08500845BB0 /* YSpinKitView.m */; };
 		A154B10E1989F2E400845BB0 /* FSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A154B10D1989F2E400845BB0 /* FSTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -74,10 +71,6 @@
 		65B2982719CC1E2100A53DA2 /* JDMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMenuViewController.h; sourceTree = "<group>"; };
 		65B2982819CC1E2100A53DA2 /* JDMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMenuViewController.m; sourceTree = "<group>"; };
 		65B2982919CC1E2100A53DA2 /* JDMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDMenuViewController.xib; sourceTree = "<group>"; };
-		65B2982D19CC1F2900A53DA2 /* JDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSideMenu.h; sourceTree = "<group>"; };
-		65B2982E19CC1F2900A53DA2 /* JDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSideMenu.m; sourceTree = "<group>"; };
-		65B2982F19CC1F2900A53DA2 /* UIViewController+JDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JDSideMenu.h"; sourceTree = "<group>"; };
-		65B2983019CC1F2900A53DA2 /* UIViewController+JDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JDSideMenu.m"; sourceTree = "<group>"; };
 		65B4BCD719CBE894006AE37F /* cal_intro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cal_intro@2x.png"; sourceTree = "<group>"; };
 		65DBDD6119D2B06400D6BDE3 /* calf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = calf.jpg; sourceTree = "<group>"; };
 		65F924AC19C09EF40095B03A /* cal_pic3.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cal_pic3.1.jpg; sourceTree = "<group>"; };
@@ -125,8 +118,6 @@
 		A154B0FD1989EF8600845BB0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		A154B1021989EFEF00845BB0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		A154B1031989EFEF00845BB0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		A154B1061989F06500845BB0 /* ProjectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectSettings.h; sourceTree = "<group>"; };
-		A154B1071989F06500845BB0 /* ProjectSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectSettings.m; sourceTree = "<group>"; };
 		A154B1091989F08500845BB0 /* YSpinKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSpinKitView.h; sourceTree = "<group>"; };
 		A154B10A1989F08500845BB0 /* YSpinKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSpinKitView.m; sourceTree = "<group>"; };
 		A154B10C1989F2E400845BB0 /* FSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTableViewController.h; sourceTree = "<group>"; };
@@ -152,8 +143,8 @@
 		655BE31119C95A8800362030 /* Workout-Women */ = {
 			isa = PBXGroup;
 			children = (
-				656CD89C19C9D0A800F2AF1C /* FTWorkoutTwoController.m */,
 				656CD89D19C9D0A800F2AF1C /* FTWorkoutTwoController.h */,
+				656CD89C19C9D0A800F2AF1C /* FTWorkoutTwoController.m */,
 				656CD89F19C9D0A800F2AF1C /* FTWorkoutTwoDetailController.h */,
 				656CD89E19C9D0A800F2AF1C /* FTWorkoutTwoDetailController.m */,
 			);
@@ -163,8 +154,8 @@
 		655BE31819C95BB300362030 /* Workout-Shredded */ = {
 			isa = PBXGroup;
 			children = (
-				656CD89619C9D09900F2AF1C /* FTWorkoutThreeController.m */,
 				656CD89719C9D09900F2AF1C /* FTWorkoutThreeController.h */,
+				656CD89619C9D09900F2AF1C /* FTWorkoutThreeController.m */,
 				656CD8A519C9D97900F2AF1C /* FTWorkoutThreeDetailController.h */,
 				656CD8A619C9D97900F2AF1C /* FTWorkoutThreeDetailController.m */,
 			);
@@ -174,23 +165,11 @@
 		65B2982419CC1E1200A53DA2 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				65B2983319CC1F2E00A53DA2 /* JDSideMenu */,
 				65B2982719CC1E2100A53DA2 /* JDMenuViewController.h */,
 				65B2982819CC1E2100A53DA2 /* JDMenuViewController.m */,
 				65B2982919CC1E2100A53DA2 /* JDMenuViewController.xib */,
 			);
 			name = Menu;
-			sourceTree = "<group>";
-		};
-		65B2983319CC1F2E00A53DA2 /* JDSideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				65B2982D19CC1F2900A53DA2 /* JDSideMenu.h */,
-				65B2982E19CC1F2900A53DA2 /* JDSideMenu.m */,
-				65B2982F19CC1F2900A53DA2 /* UIViewController+JDSideMenu.h */,
-				65B2983019CC1F2900A53DA2 /* UIViewController+JDSideMenu.m */,
-			);
-			name = JDSideMenu;
 			sourceTree = "<group>";
 		};
 		A1144EEC197F9A470055EA9A = {
@@ -235,8 +214,6 @@
 				6595C15B19C87D9800F9F769 /* Images.xcassets */,
 				656CD8A819C9DC9500F2AF1C /* FTCaloriesExplanationController.h */,
 				656CD8A919C9DC9500F2AF1C /* FTCaloriesExplanationController.m */,
-				A154B1061989F06500845BB0 /* ProjectSettings.h */,
-				A154B1071989F06500845BB0 /* ProjectSettings.m */,
 				A1144F07197F9A470055EA9A /* FTAppDelegate.h */,
 				A1144F08197F9A470055EA9A /* FTAppDelegate.m */,
 				A12BBCBA1994A8EC0009AA58 /* View */,
@@ -495,13 +472,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A154B0FE1989EF8600845BB0 /* MBProgressHUD+Category.m in Sources */,
-				65B2983119CC1F2900A53DA2 /* JDSideMenu.m in Sources */,
 				A12BBC9B19933D030009AA58 /* FTWorkoutDetailController.m in Sources */,
 				656CD8A019C9D0A800F2AF1C /* FTWorkoutTwoController.m in Sources */,
 				6540B1AC1986A5DE00A36C2A /* FTCalculationResult.m in Sources */,
 				A1144F56198614080055EA9A /* FTCaloriesController.m in Sources */,
 				656CD8AA19C9DC9500F2AF1C /* FTCaloriesExplanationController.m in Sources */,
-				A154B1081989F06500845BB0 /* ProjectSettings.m in Sources */,
 				A12BBC9819933BE40009AA58 /* FTWorkoutController.m in Sources */,
 				A154B1041989EFEF00845BB0 /* Reachability.m in Sources */,
 				A154B0FF1989EF8600845BB0 /* MBProgressHUD.m in Sources */,
@@ -510,7 +485,6 @@
 				A1144F09197F9A470055EA9A /* FTAppDelegate.m in Sources */,
 				656CD89A19C9D09900F2AF1C /* FTWorkoutThreeController.m in Sources */,
 				656CD8A719C9D97900F2AF1C /* FTWorkoutThreeDetailController.m in Sources */,
-				65B2983219CC1F2900A53DA2 /* UIViewController+JDSideMenu.m in Sources */,
 				A12BBCBD1994AE0D0009AA58 /* FTArticleController.m in Sources */,
 				A1144F05197F9A470055EA9A /* main.m in Sources */,
 				650D5BA919D272EC00EF318B /* FTWorkoutTwoDetailController.m in Sources */,
@@ -620,9 +594,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 728331ED1D724D5785CB7929 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fit",
@@ -643,6 +622,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 728331ED1D724D5785CB7929 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Qfpay Technology Company Limited";

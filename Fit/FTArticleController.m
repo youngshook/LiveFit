@@ -11,7 +11,6 @@
 #import "ArticleCell.h"
 #import "FTArticleDetailController.h"
 #import "Reachability.h"
-#import "JDSideMenu.h"
 
 @interface FTArticleController ()
 {
@@ -72,13 +71,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)menuBtnAction:(id)sender {
-    JDSideMenu *sideMenu = (JDSideMenu *)self.navigationController.parentViewController;
-    
-    if (sideMenu.isMenuVisible) {
-        [sideMenu hideMenuAnimated:YES];
-    }else{
-        [sideMenu showMenuAnimated:YES];
-    }
+	[self.view endEditing:YES];
+	[self performSelector:@selector(presentLeftMenuViewController:) withObject:sender];
 }
 
 -(void)findObjects:(PFQuery *)query
