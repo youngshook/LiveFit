@@ -254,11 +254,10 @@
     _pageControl.numberOfPages = totalPageNumber;
     _pageControl.currentPage = 0;
 
-	
+	_contentTextView.font = [UIFont fontWithName:@"Helvetica Neue" size:15];
 }
 
-- (void)viewWillLayoutSubviews{
-	_contentTextView.font = [UIFont systemFontOfSize:15];
+- (void)viewDidAppear:(BOOL)animated{
 	CGFloat fixedWidth = _contentTextView.frame.size.width;
 	CGSize newSize = [_contentTextView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
 	CGRect newFrame = _contentTextView.frame;

@@ -33,36 +33,33 @@
     return self;
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    //[self refreshWebPage];
-    
-    Reachability *reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
-    if ([reachability currentReachabilityStatus] == 0){
-        
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络连接好像有问题" message:@"请检查网络" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
-        [alertView show];
-        
-    }else{
-        
-        [self refresh];
-    }
+- (void)viewDidAppear:(BOOL)animated{
+	[super viewDidAppear:animated];
+	[self refresh];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	articleArray = [NSMutableArray new];
     [HUD show:YES];
 }
 
 -(void)refresh
 {
-    articleArray = [NSMutableArray new];
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"Article"];
-    
-    [self findObjects:query];
+	Reachability *reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+	if ([reachability currentReachabilityStatus] == 0){
+		
+		UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络连接好像有问题" message:@"请检查网络" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
+		[alertView show];
+		
+	}else{
+		
+		PFQuery *query = [PFQuery queryWithClassName:@"Article"];
+		
+		[self findObjects:query];
+	}
+
 }
 
 - (void)didReceiveMemoryWarning

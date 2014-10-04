@@ -266,11 +266,10 @@
     
     _pageControl.numberOfPages = totalPageNumber;
     _pageControl.currentPage = 0;
-    
+	_contentTextView.font = [UIFont fontWithName:@"Helvetica Neue" size:15];
 }
 
-- (void)viewWillLayoutSubviews{
-	_contentTextView.font = [UIFont systemFontOfSize:15];
+- (void)viewDidAppear:(BOOL)animated{
 	CGFloat fixedWidth = _contentTextView.frame.size.width;
 	CGSize newSize = [_contentTextView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
 	CGRect newFrame = _contentTextView.frame;
@@ -278,6 +277,7 @@
 	_contentTextView.frame = newFrame;
 	self.tableView.contentSize = CGSizeMake(self.view.frame.size.width, _headerScrollView.frame.size.height + _contentTextView.frame.size.height + 20);
 }
+
 
 //pagecontrol的点跟着页数改变
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

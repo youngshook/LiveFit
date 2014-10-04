@@ -34,16 +34,21 @@
 	
     [_headerImageView sd_setImageWithURL:[NSURL URLWithString:_article.coverPhotoUrl]];
 	
+	self.textView.font = [UIFont fontWithName:@"Helvetica Neue" size:15];
 }
 
-- (void)viewWillLayoutSubviews{
-	self.textView.font = [UIFont systemFontOfSize:15];
+- (void)viewDidAppear:(BOOL)animated{
+
 	CGFloat fixedWidth = self.textView.frame.size.width;
 	CGSize newSize = [self.textView sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
 	CGRect newFrame = self.textView.frame;
 	newFrame.size = CGSizeMake(fmaxf(newSize.width, fixedWidth), newSize.height);
 	self.textView.frame = newFrame;
 	self.tableView.contentSize = CGSizeMake(self.view.frame.size.width, _headerImageView.frame.size.height + self.textView.frame.size.height + 20);
+}
+
+- (void)viewWillLayoutSubviews{
+
 }
 
 - (void)didReceiveMemoryWarning
