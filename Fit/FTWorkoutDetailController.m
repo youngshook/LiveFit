@@ -243,7 +243,7 @@
     
     for ( int i = 1; i < totalPageNumber+1; i++) {
         
-        NSString *imageName = [NSString stringWithFormat:@"%@%d", headerScrollViewImagePrefixName, i];
+        NSString *imageName = [NSString stringWithFormat:@"%@%d.jpg", headerScrollViewImagePrefixName, i];
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(320*i-320, 0, 320, 250)];
         [imageView setImage:[UIImage imageNamed:imageName]];
