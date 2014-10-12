@@ -11,3 +11,11 @@ pod 'TAPKeyboardPop', '0.1.2'
 pod 'YSCategorys', '1.0.7'
 pod 'AMBTableViewController', '1.1.0'
 pod 'RESideMenu', '4.0.7'
+pod "APLKeyboardControls"
+post_install do |installer|
+  installer.project.targets.each do |target|
+    target.build_configurations.each do |configuration|
+      target.build_settings(configuration.name)['ARCHS'] = 'armv7 armv7s'
+    end
+  end
+end

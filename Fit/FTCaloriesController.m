@@ -24,7 +24,7 @@
 }
 
 @property(nonatomic,strong) RMPickerViewController *pickerVC;
-
+@property(nonatomic,strong) APLKeyboardControls *keyboardControls;
 @end
 
 
@@ -34,6 +34,8 @@
 {
     [super viewDidLoad];
 	
+	self.keyboardControls = [[APLKeyboardControls alloc]initWithInputFields:@[self.ageTextField,self.weightTextField,self.heightTextField]];;
+	self.keyboardControls.hasPreviousNext = YES;
 	[RMPickerViewController setLocalizedTitleForCancelButton:@"取消"];
 	[RMPickerViewController setLocalizedTitleForSelectButton:@"选择"];
 	
@@ -66,9 +68,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
-        case 1:
+        case 0:
             
-            pickerTag = 1;
+            pickerTag = 0;
 			[self.view endEditing:YES];
 			self.pickerVC = [RMPickerViewController pickerController];
 			self.pickerVC.delegate = self;
@@ -326,7 +328,7 @@
 
 #pragma mark - RMPickerViewController Delegates
 - (void)pickerViewController:(RMPickerViewController *)vc didSelectRows:(NSArray  *)selectedRows {
-	if (pickerTag == 1) {
+	if (pickerTag == 0) {
 		[self genderBtnPressed];
 	}else if (pickerTag == 4){
 		[self activeBtnPressed];
@@ -351,7 +353,7 @@
 {
 	switch (pickerTag) {
 			
-		case 1:
+		case 0:
 			
 			return [self.genderPickerData count];
 			
@@ -378,7 +380,7 @@
 {
 	switch (pickerTag) {
 			
-		case 1:
+		case 0:
 			
 			return [self.genderPickerData objectAtIndex:row];
 			

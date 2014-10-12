@@ -19,6 +19,7 @@
 	#import "MBProgressHUD.h"
 	#import "FSTableViewController.h"
 	#import "UIImageView+WebCache.h"
+	#import "APLKeyboardControls.h"
 	#import "UIViewController+RESideMenu.h"
 	#import <Parse/Parse.h>
 #endif
