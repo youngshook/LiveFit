@@ -1,0 +1,96 @@
+PODS:
+  - AFNetworking (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.3.1)
+  - AFNetworking/Security (2.3.1)
+  - AFNetworking/Serialization (2.3.1)
+  - AFNetworking/UIKit (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMBTableViewController (1.1.0)
+  - APLKeyboardControls (0.1.2):
+    - NSData+Base64 (~> 1.0.0)
+  - BlocksKit (2.2.0):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.0):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.0)
+  - BlocksKit/DynamicDelegate (2.2.0):
+    - BlocksKit/MiniFFI
+  - BlocksKit/MessageUI (2.2.0):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/MiniFFI (2.2.0)
+  - BlocksKit/UIKit (2.2.0):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bolts (1.1.3)
+  - EAIntroView (2.6.0)
+  - Facebook-iOS-SDK (3.19.0):
+    - Bolts (~> 1.0)
+  - FLEX (1.1.1)
+  - NSData+Base64 (1.0.0)
+  - Parse (1.2.21):
+    - Facebook-iOS-SDK (~> 3.17)
+  - RESideMenu (4.0.7)
+  - RMPickerViewController (1.2.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage-ProgressView (0.4.0):
+    - SDWebImage (~> 3.7.0)
+  - SDWebImage/Core (3.7.1)
+  - TAPKeyboardPop (0.1.2)
+  - UMeng (2.2.1)
+  - YSCategorys (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.3.1)
+  - AMBTableViewController (= 1.1.0)
+  - APLKeyboardControls
+  - BlocksKit (= 2.2.0)
+  - EAIntroView (= 2.6.0)
+  - FLEX (= 1.1.1)
+  - Parse (~> 1.2.20)
+  - RESideMenu (= 4.0.7)
+  - RMPickerViewController (~> 1.2.0)
+  - SDWebImage-ProgressView (= 0.4.0)
+  - TAPKeyboardPop (= 0.1.2)
+  - UMeng (= 2.2.1)
+  - YSCategorys (= 1.0.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  AMBTableViewController: 2e465b35919862131f2fcd1942daa7cd75526bf3
+  APLKeyboardControls: e2e61708b87ce24bb7daeb06b03888f54a97a67a
+  BlocksKit: 4eeb8c24dcf888ef56205656d86ccd270ffd63c3
+  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  EAIntroView: 1223ef380aef3e2285508016a083d70e80c48a30
+  Facebook-iOS-SDK: cb7d74759d0b1ba546e6e6f1dde407b0d4e448d6
+  FLEX: 8e53751b915759215d77c7c72b1c7bd28665dac2
+  NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
+  Parse: 4be4e9fe2ee6dae16010e7622a5641a7c89154b7
+  RESideMenu: a9c1cd2e64e60e1d3166ddac01a83e215a0e4d30
+  RMPickerViewController: 9e976b3c4bc09bd7d546306f0e6dacc19ce6c496
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SDWebImage-ProgressView: 5b094a93013b3f6ae9d622b58055c942c964b678
+  TAPKeyboardPop: 1d57b5b8e7521454164c5e9e9e4e9cf19a375f37
+  UMeng: e5b6c6a06215aeba33cb59159341ab3d6d292935
+  YSCategorys: 0fc1b2b319eebe0181d75fa7432780d371c0ab4d
+
+COCOAPODS: 0.34.2
